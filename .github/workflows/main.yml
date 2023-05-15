@@ -2,7 +2,7 @@ name:  ftp upload
 on:
   push:
     branches:
-      - main()
+      - main
 
 
 jobs:
