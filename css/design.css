@@ -1,0 +1,1305 @@
+@charset "UTF-8";
+/*
+* TOP
+------------------------------------------------*/
+section.loading {
+	position:fixed;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	z-index:2000;
+	background-color:#000;
+	background-image: url(../image/bg-grd.jpg);
+	background-size: cover;
+}
+section.loading .loading__img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+/* firstView */
+section.firstView{
+	position: relative;
+	font-size: 0;
+}
+section.firstView img{
+	position: relative;
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	left: 50%;
+	min-height: 480px;
+	object-fit: cover;
+}
+section.firstView img.sp_img{
+	display: none;
+}
+section.firstView .textWrap{
+	display: block;
+	position: absolute;
+	width: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	top: 55%;
+	left: 50%;
+}
+section.firstView .textWrap .ttl{
+	color: #000;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: 1px;
+	text-shadow: rgba(255,255,255,0.7) 1px 1px 15px,
+		rgba(255,255,255,0.7) -1px 1px 15px,
+		rgba(255,255,255,0.7) 1px -1px 15px,
+		rgba(255,255,255,0.8) -1px -1px 15px,
+		rgba(255,255,255,0.8) 2px 2px 15px,
+		rgba(255,255,255,0.9) -2px 2px 15px,
+		rgba(255,255,255,0.9) 2px -2px 15px,
+		rgba(255,255,255,0.9) -2px -2px 15px;
+}
+section.firstView .textWrap .ttl span{
+	display: block;
+	font-size: 13px;
+}
+section.firstView .textWrap .ttl span.en{
+	font-size: 20px;
+}
+/* Concept */
+.indexWrap .conceptWrap{
+	padding: 20px 0 60px 0;
+}
+.indexWrap .conceptWrap .textWrap p{
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+/* News */
+.indexWrap .newsWrap .newsList .postInfo{
+	align-items: flex-end;
+	padding-bottom: 10px;
+}
+.indexWrap .newsWrap .newsList .postCat{
+	padding: 5px 30px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #b7b7b7;
+}
+.indexWrap .newsWrap .newsList .postDate{
+	padding-left: 10px;
+	text-align: left;
+}
+.indexWrap .newsWrap .newsList .postTit{
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}
+.indexWrap .newsWrap .btnWrap{
+	padding: 40px 0;
+	text-align: center;
+}
+.indexWrap .newsWrap .btnWrap .lookBtn{
+	display: inline-block;
+	position: relative;
+	background: #d5a97d;
+	color: #fff;
+	padding: 10px 40px 10px 30px;
+	border-bottom: 5px solid #c65c33;
+	border-radius: 4px;
+}
+.indexWrap .newsWrap .btnWrap .lookBtn .text{
+	font-size: 16px;
+}
+.indexWrap .newsWrap .btnWrap .lookBtn .ja{
+	padding-left: 10px;
+	font-size: 12px;
+}
+.indexWrap .newsWrap .btnWrap .lookBtn:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	width: 10px;
+	height: 10px;
+	margin: -5px 0 0 0;
+	border-top: solid 2px #fff;
+	border-right: solid 2px #fff;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+/*
+*メディア設定
+------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+	section.firstView img{
+		height: 300px;
+		object-fit: cover;
+	}
+	section.firstView img.sp_img{
+		display: block;
+	}
+	section.firstView img.pc_img{
+		display: none;
+	}
+	section.firstView .textWrap .ttl{
+		font-size: 6vw;
+		text-shadow: rgba(255,255,255,0.7) 1px 1px 8px,
+		rgba(255,255,255,0.7) -1px 1px 8px,
+		rgba(255,255,255,0.7) 1px -1px 8px,
+		rgba(255,255,255,0.8) -1px -1px 8px,
+		rgba(255,255,255,0.8) 2px 2px 8px,
+		rgba(255,255,255,0.9) -2px 2px 8px,
+		rgba(255,255,255,0.9) 2px -2px 8px,
+		rgba(255,255,255,0.9) -2px -2px 8px;
+	}
+	section.firstView .textWrap .ttl span{
+		font-size: 4.8vw;
+	}
+	section.firstView .textWrap .ttl span.en{
+		font-size: 8vw;
+	}
+	.indexWrap .conceptWrap .textWrap p{
+		font-size: 3.26vw;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	section.firstView img{
+		height: 400px;
+		object-fit: cover;
+	}
+	section.firstView .textWrap .ttl{
+		text-shadow: rgba(255,255,255,0.7) 1px 1px 10px,
+		rgba(255,255,255,0.7) -1px 1px 10px,
+		rgba(255,255,255,0.7) 1px -1px 10px,
+		rgba(255,255,255,0.8) -1px -1px 10px,
+		rgba(255,255,255,0.8) 2px 2px 10px,
+		rgba(255,255,255,0.9) -2px 2px 10px,
+		rgba(255,255,255,0.9) 2px -2px 10px,
+		rgba(255,255,255,0.9) -2px -2px 10px;
+	}
+}
+/*
+* Concept
+------------------------------------------------*/
+/*
+*メディア設定
+------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+}
+/*
+* System
+------------------------------------------------*/
+section.systemWrap h3.h3_ttl{
+	color: #d5a97d;
+	font-size: 24px;
+	text-align: center;
+	line-height: 1;
+}
+section.systemWrap .price-guide,
+section.systemWrap .hours-guide{
+	padding: 20px 0;
+}
+section.systemWrap .price-guide h3.h3_ttl,
+section.systemWrap .hours-guide h3.h3_ttl{
+	margin-bottom: 20px;
+}
+section.systemWrap .priceInner,
+section.systemWrap .hoursInner{
+	max-width: 450px;
+	margin: 0 auto;
+}
+section.systemWrap .priceInner .infoWrap{
+	padding-top: 10px;
+	color: #5d5d5d;
+}
+section.systemWrap .priceInner .infoWrap .creditCard{
+	margin-bottom: 10px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.8;
+}
+section.systemWrap .priceInner .infoWrap .attention{
+	font-size: 12px;
+	line-height: 1.5;
+}
+section.systemWrap .priceInner .infoWrap .dressCode{
+	font-size: 13px;
+	margin-bottom: 10px;
+	line-height: 1.8;
+}
+section.systemWrap table{
+	width: 100%;
+	text-align: center;
+}
+section.systemWrap table th,
+section.systemWrap table td{
+	width: 50%;
+	padding: 20px 0;
+	font-size: 16px;
+	font-family: '小塚ゴシック Pro L', 'Kozuka Gothic Pro Light', sans-serif;
+	vertical-align: middle;
+}
+section.systemWrap table th{
+	color: #fff;
+	font-weight: normal;
+	background-color: #d5a97d;
+	border: 1px solid #d5a97d;
+}
+section.systemWrap table th:first-child{
+	border-right: 1px solid #fff;
+}
+section.systemWrap table td{
+	color: #5d5d5d;
+	border: 1px solid #d5a97d;
+}
+section.systemWrap .price-guide table td{
+	color: #5d5d5d;
+	background-color: #fff;
+}
+section.systemWrap .hours-guide h3.h3_ttl{
+	font-size: 18px;
+}
+section.systemWrap .hours-guide td{
+	color: #b7b7b7;
+}
+/*
+*メディア設定
+------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+	section.systemWrap .priceInner,
+	section.systemWrap .hoursInner{
+		padding: 0 10px;
+	}
+	section.systemWrap table th,
+	section.systemWrap table td{
+		padding: 10px 0;
+		font-size: 13px;
+	}
+}
+@media only screen and (min-width: 768px){
+	section.systemWrap h3.h3_ttl{
+		font-size: 30px;
+	}
+	section.systemWrap .priceInner .infoWrap{
+		padding-top: 20px;
+	}
+	section.systemWrap .priceInner .infoWrap .creditCard{
+		font-size: 18px;
+	}
+	section.systemWrap .priceInner .infoWrap .attention{
+		font-size: 14px;
+	}
+	section.systemWrap .priceInner .infoWrap .dressCode{
+		font-size: 15px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	section.systemWrap .hours-guide h3.h3_ttl{
+		font-size: 26px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	section.systemWrap .price-guide h3.h3_ttl,
+	section.systemWrap .hours-guide h3.h3_ttl{
+		margin-bottom: 30px;
+	}
+	section.systemWrap .price-guide,
+	section.systemWrap .hours-guide{
+		padding: 40px 0;
+	}
+}
+@media screen and (min-width: 1025px){
+	section.systemWrap .price-guide h3.h3_ttl,
+	section.systemWrap .hours-guide h3.h3_ttl{
+		margin-bottom: 40px;
+	}
+	section.systemWrap .price-guide,
+	section.systemWrap .hours-guide{
+		padding: 60px 0;
+	}
+	section.systemWrap .priceList table{
+		width: 99%;
+		margin: 0 0.5%;
+	}
+	section.systemWrap .priceList table.guide_3{
+		width: 32.3333%;
+		float: left;
+		margin: 0 0.5% 20px 0.5%;
+	}
+}
+/*
+* Cast
+------------------------------------------------*/
+.castWrap .textWrap p {
+	color: #5d5d5d;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.castWrap .castList{
+	padding: 20px 0;
+	letter-spacing: -1em;
+}
+.castWrap .castList article{
+	display: inline-block;
+	letter-spacing: normal;
+	vertical-align: top;
+}
+.castWrap .castList article a{
+	color: #5d5d5d;
+}
+.castWrap .castList article dt{
+	line-height: 0;
+	margin-bottom: 5px;
+}
+.castWrap .castList article h3{
+	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+}
+.castWrap .castList article h3 span{
+	display: block;
+	font-size: 14px;
+}
+/*
+*メディア設定
+------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+	.castWrap .castList article{
+		width: 50%;
+		padding: 0 5px;
+		margin-bottom: 10px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.castWrap .castList{
+		padding: 30px 0;
+	}
+	.castWrap .castList article{
+		width: 20%;
+		padding: 0 5px;
+		margin-bottom: 10px;
+	}
+	.castWrap .castList article h3{
+		font-size: 18px;
+	}
+}
+@media screen and (min-width: 1025px){
+	.castWrap .castList{
+		padding: 40px 0;
+	}
+	.castWrap .castList article{
+		width: 152px;
+		padding: 0;
+		margin-bottom: 13px;
+	}
+	.castWrap .castList article:not(:nth-child(6n+6)){
+		margin-right: 13px;
+	}
+}
+/*
+* Profile
+------------------------------------------------*/
+.castGallery{
+	padding: 20px 0;
+}
+.castGallery .big{
+	line-height: 0;
+}
+.castGallery .listWrap li{
+	width: 32%;
+	float: left;
+	line-height: 0;
+	position: relative;
+	overflow: hidden;
+	padding-top: 45%;
+}
+.castGallery .listWrap li img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: auto;
+	height: 100%;
+}
+.castGallery .listWrap li:not(:nth-child(3n)){
+	margin-right: 2%;
+}
+.castGallery .listWrap li:nth-child(n+4){
+	margin-top: 2%;
+}
+.profileWrap .profileDetail{
+	padding: 30px 0;
+}
+.profileDetail .h3_ttl{
+	padding-bottom: 20px;
+	text-align: center;
+	margin-bottom: 5px;
+	color: #d5a97d;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: 0.5px;
+}
+.profileDetail .h3_ttl .rubiName{
+	display: block;
+	color: #b7b7b7;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+.profileDetail .detail dl{
+	border-bottom: 1px solid #d5a97d;
+	color: #b7b7b7;
+	font-size: 14px;
+	font-family: "メイリオ", sans-serif;
+}
+/*
+*メディア設定
+------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+	.profileDetail .detail dl{
+		width: 100%;
+		display: table;
+	}
+	.profileDetail .detail.left dl:first-child{
+		border-top: 1px solid #d5a97d;
+	}
+	.profileDetail .detail dl dt,
+	.profileDetail .detail dl dd{
+		display: table-cell;
+		vertical-align:middle;
+	}
+	.profileDetail .detail dl dt{
+		width: 40%;
+		padding: 10px 0 10px 10px;
+	}
+	.profileDetail .detail dl dd{
+		padding: 10px 0 10px 10px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.castGallery{
+		padding: 40px 0;
+	}
+	.castGallery .big,
+	.castGallery .listWrap{
+		float: left;
+		vertical-align: top;
+	}
+	.castGallery .big{
+		width: 49%;
+		margin-right: 1%;
+	}
+	.castGallery .listWrap{
+		width: 50%;
+	}
+	.castGallery .listWrap li{
+		width: 32%;
+	}
+	.castGallery .listWrap li:not(:nth-child(3n)){
+		margin-right: 1.5%;
+	}
+	.castGallery .listWrap li:nth-child(n+4){
+		margin-top: 1.5%;
+	}
+	.profileWrap .profileDetail{
+		padding: 40px 0;
+	}
+	.profileDetail .h3_ttl{
+		font-size: 26px;
+		padding-bottom: 40px;
+	}
+	.profileDetail .detail{
+		width: 50%;
+		float: left;
+	}
+	.profileDetail .detail.left{
+		padding: 0 20px 0 0;
+	}
+	.profileDetail .detail.right{
+		padding: 0 0 0 20px;
+	}
+	.profileDetail .detail dl{
+		font-size: 16px;
+	}
+	.profileDetail .detail dl dt{
+		width: 160px;
+		padding: 12px 0 12px 20px;
+	}
+	.profileDetail .detail dl dd{
+		padding: 12px 0 12px 20px;
+	}
+	.profileDetail .detail dl:first-child{
+		border-top: 1px solid #d5a97d;
+	}
+}
+@media screen and (min-width: 1025px){
+	.castGallery{
+		padding: 60px 0;
+	}
+	.castGallery .big{
+		width: 482px;
+		margin-right: 13.6px;
+	}
+	.castGallery .listWrap{
+		width: 484px;
+	}
+	.castGallery .listWrap li{
+		width: 152px;
+	}
+	.castGallery .listWrap li:not(:nth-child(3n)){
+		margin-right: 13.6px;
+	}
+	.castGallery .listWrap li:nth-child(n+4){
+		margin-top: 20px;
+	}
+	.profileWrap .profileDetail{
+		padding: 60px 0;
+	}
+	.profileDetail .h3_ttl{
+		font-size: 30px;
+		padding-bottom: 40px;
+	}
+	.profileDetail .detail dl{
+		font-size: 18px;
+	}
+	.profileDetail .detail dl dt{
+		padding: 16px 0 16px 40px;
+	}
+	.profileDetail .detail dl dd{
+		padding: 16px 0 16px 40px;
+	}
+}
+/*
+* News
+------------------------------------------------*/
+/* News一覧 */
+section.newsWrap .news-guide{
+	padding: 30px 0;
+}
+section.newsWrap .newsList article:not(:first-child){
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #ffac8b;
+}
+section.newsWrap .newsList .postInfo{
+	display: flex;
+	justify-content: flex-start;
+	padding-bottom: 5px;
+}
+section.newsWrap .newsList .postCat{
+	padding-right: 10px;
+	color: #ffac8b;
+	font-size: 14px;
+}
+section.newsWrap .newsList .postDate{
+	color: #000;
+	font-size: 12px;
+}
+section.newsWrap .newsList h3.postTit{
+	color: #000;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+section.newsWrap .newsList .post-detail{
+	padding-top: 10px;
+}
+section.newsWrap .newsList .post-detail dd{
+	color: #000;
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+section.newsWrap .newsList .post-detail dd img{
+	display: none;
+}
+section.newsWrap .ListPager ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+section.newsWrap .ListPager ul li{
+	color: #ffac8b;
+	font-size: 16px;
+}
+section.newsWrap .ListPager ul li a{
+	display: block;
+	position: relative;
+	color: #ffac8b;
+}
+section.newsWrap .ListPager ul li.previous{
+	padding: 10px 10px 10px 0;
+}
+section.newsWrap .ListPager ul li.previous a{
+	padding: 0 0 0 25px;
+}
+section.newsWrap .ListPager ul li.previous a:before{
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	width: 6px;
+	height: 6px;
+	margin: -4px 0 0 0;
+	border-top: solid 2px #ffac8b;
+	border-right: solid 2px #ffac8b;
+	-webkit-transform: rotate(-135deg);
+	        transform: rotate(-135deg);
+}
+section.newsWrap .ListPager ul li.next{
+	padding: 10px 0px 10px 10px;
+}
+section.newsWrap .ListPager ul li.next a{
+	padding: 0 25px 0 0;
+}
+section.newsWrap .ListPager ul li.next a:after{
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 6px;
+	height: 6px;
+	margin: -4px 0 0 0;
+	border-top: solid 2px #ffac8b;
+	border-right: solid 2px #ffac8b;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+/* News詳細 */
+section.newsWrap .postWrap .inner{
+	max-width: 640px;
+	margin: auto;
+}
+section.newsWrap .postWrap article{
+	color: #000;
+}
+section.newsWrap .postWrap article .postDate{
+	padding-bottom: 5px;
+	font-size: 12px;
+	line-height: 1;
+}
+section.newsWrap .postWrap article .postTit{
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+section.newsWrap .postWrap article .post-detail{
+	padding: 10px 0;
+}
+section.newsWrap .postWrap article .post-detail p{
+	margin: 5px auto 20px;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+section.newsWrap .pagingWrap .inner{
+	max-width: 640px;
+	margin: auto;
+}
+section.newsWrap .pagingWrap ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+section.newsWrap .pagingWrap ul li a{
+	display: block;
+	position: relative;
+}
+section.newsWrap .pagingWrap ul li.prev a{
+	padding: 10px 10px 10px 25px;
+}
+section.newsWrap .pagingWrap ul li.prev a:before{
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	width: 6px;
+	height: 6px;
+	margin: -4px 0 0 0;
+	border-top: solid 2px #ffac8b;
+	border-right: solid 2px #ffac8b;
+	-webkit-transform: rotate(-135deg);
+	        transform: rotate(-135deg);
+}
+section.newsWrap .pagingWrap ul li.next a{
+	padding: 10px 25px 10px 10px;
+}
+section.newsWrap .pagingWrap ul li.next a:after{
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 6px;
+	height: 6px;
+	margin: -4px 0 0 0;
+	border-top: solid 2px #ffac8b;
+	border-right: solid 2px #ffac8b;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+section.newsWrap .pagingWrap ul li .text{
+	color: #ffac8b;
+	font-size: 16px;
+}
+/*
+*メディア設定
+------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+	section.newsWrap .newsList .post-detail dt{
+		line-height: 0;
+		margin-bottom: 10px;
+	}
+}
+@media only screen and (min-width: 768px){
+	section.newsWrap .news-guide{
+		padding: 40px 0;
+	}
+	section.newsWrap .newsList article:not(:first-child){
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+	section.newsWrap .newsList .postCat{
+		font-size: 16px;
+	}
+	section.newsWrap .newsList .postDate{
+		font-size: 12px;
+	}
+	section.newsWrap .newsList h3.postTit{
+		font-size: 20px;
+	}
+	section.newsWrap .newsList .post-detail{
+		padding-top: 15px;
+	}
+	section.newsWrap .newsList .post-detail dt,
+	section.newsWrap .newsList .post-detail dd{
+		vertical-align: top;
+	}
+	section.newsWrap .newsList .post-detail dt{
+		width: 35%;
+	}
+	section.newsWrap .newsList .post-detail dd{
+		padding-left: 20px;
+		font-size: 14px;
+	}
+	section.newsWrap .postWrap article .postTit{
+		font-size: 24px;
+	}
+	section.newsWrap .ListPager ul li,
+	section.newsWrap .ListPager ul li a,
+	section.newsWrap .pagingWrap ul li .text{
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 1025px){
+	section.newsWrap .news-guide{
+		padding: 60px 0;
+	}
+	section.newsWrap .newsList article:not(:first-child){
+		margin-top: 40px;
+		padding-top: 40px;
+	}
+	section.newsWrap .newsList .post-detail dt{
+		width: 326px;
+	}
+	section.newsWrap .newsList .post-detail dd{
+		padding-left: 20px;
+	}
+}
+/*
+* Access
+------------------------------------------------*/
+section.accessWrap h3.h3_ttl{
+	color: #d5a97d;
+	font-size: 24px;
+	text-align: center;
+	line-height: 1;
+}
+section.accessWrap .access-guide h3.h3_ttl,
+section.accessWrap .hours-guide h3.h3_ttl{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+section.accessWrap .access-guide,
+section.accessWrap .hours-guide{
+	padding: 20px 0;
+}
+section.accessWrap .access-guide .address dl{
+	font-family: '小塚ゴシック Pro L', 'Kozuka Gothic Pro Light', sans-serif;
+	border-top: 1px solid #d5a97d;
+}
+section.accessWrap .access-guide .address dl dt,
+section.accessWrap .access-guide .address dl dd,
+section.accessWrap .access-guide .address dl dd a{
+	color: #b7b7b7;
+	font-size: 14px;
+}
+section.accessWrap .access-guide .map iframe{
+	width: 100%;
+	height: 220px;
+}
+section.accessWrap .hoursInner{
+	max-width: 450px;
+	margin: 0 auto;
+}
+section.accessWrap .hours-guide table{
+	width: 100%;
+	text-align: center;
+}
+section.accessWrap .hours-guide table th,
+section.accessWrap .hours-guide table td{
+	width: 50%;
+	padding: 20px 0;
+	font-size: 16px;
+	font-family: '小塚ゴシック Pro L', 'Kozuka Gothic Pro Light', sans-serif;
+	vertical-align: middle;
+}
+section.accessWrap .hours-guide table th{
+	color: #fff;
+	font-weight: normal;
+	background-color: #d5a97d;
+	border: 1px solid #d5a97d;
+}
+section.accessWrap .hours-guide table th:first-child{
+	border-right: 1px solid #fff;
+}
+section.accessWrap .hours-guide table td{
+	color: #b7b7b7;
+	border: 1px solid #d5a97d;
+}
+/*
+*メディア設定
+------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+	section.accessWrap .access-guide .address dl{
+		padding: 15px 5px;
+	}
+	section.accessWrap .access-guide .address dl dt{
+		margin-bottom: 5px;
+	}
+	section.accessWrap .hoursInner{
+		padding: 0 10px;
+	}
+	section.accessWrap .hours-guide table th,
+	section.accessWrap .hours-guide table td{
+		padding: 10px 0;
+		font-size: 13px;
+	}
+}
+@media only screen and (min-width: 768px){
+	section.accessWrap .access-guide h3.h3_ttl,
+	section.accessWrap .hours-guide h3.h3_ttl{
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+	section.accessWrap .access-guide,
+	section.accessWrap .hours-guide{
+		padding: 40px 0;
+	}
+	section.accessWrap .access-guide .address,
+	section.accessWrap .access-guide .map{
+		width: 50%;
+		float: left;
+	}
+	section.accessWrap .access-guide .address{
+		padding-right: 20px;
+	}
+	section.accessWrap .access-guide .address dt{
+		width: 30%;
+		padding: 21px 0 21px 10px;
+	}
+	section.accessWrap .access-guide .address dd{
+		padding: 21px 10px 21px 10px;
+	}
+}
+@media screen and (min-width: 1025px){
+	section.accessWrap .access-guide h3.h3_ttl,
+	section.accessWrap .hours-guide h3.h3_ttl{
+		margin-bottom: 40px;
+	}
+	section.accessWrap .access-guide,
+	section.accessWrap .hours-guide{
+		padding: 60px 0;
+	}
+	section.accessWrap .access-guide .address dt{
+		width: 200px;
+		padding: 21px 0 21px 20px;
+	}
+	section.accessWrap .access-guide .address dd{
+		padding: 21px 20px 21px 0;
+	}
+}
+/*
+* Recruit
+------------------------------------------------*/
+.recruitWrap .tbl-r01{
+	width: 100%;
+	font-size: 14px;
+	font-family: '小塚ゴシック Pro L', 'Kozuka Gothic Pro Light', sans-serif;
+}
+.recruitWrap .tbl-r01 th{
+	width: 150px;
+	background-color: #d5a97d;
+	border: 1px solid #ffac8b;
+	vertical-align: middle;
+	color: #fff;
+	padding: 10px;
+}
+.recruitWrap .tbl-r01 td{
+	border: 1px solid #ffac8b;
+	padding: 10px;
+	color: #5d5d5d;
+}
+.recruitWrap .textWrap p {
+	color: #5d5d5d;
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 0 0 20px 0;
+}
+.recruitWrap .pageLink{
+	background: url(../image/recruit_paget_view2.jpg) no-repeat;
+	background-size: cover;
+	padding: 30px 0;
+}
+.recruitWrap .pageLink .LinkWrap ul li{
+	text-align: left;
+	padding: 10px 0 0 0;
+}
+.recruitWrap .pageLink .LinkWrap dl{
+	background-color: #ffffff;
+	padding: 10px 20px;
+	
+}
+.recruitWrap .pageLink .LinkWrap dl dt{
+	line-height: 30px;
+	font-size: 25px;
+	color: #d5a97d;
+}
+.recruitWrap .pageLink .LinkWrap dl dd{
+	border: 1px solid #d5a97d;
+	text-align: center;
+}
+.recruitWrap .pageLink .LinkWrap dl dd a{
+	display: block;
+	color: #d5a97d;
+	font-size: 14px;
+	font-weight: bold;
+}
+.recruitWrap .pageLink .LinkWrap dl dt span.ja{
+	display: block;
+	line-height: 15px;
+	font-size: 10px;
+	color: #000000;
+}
+.recruitWrap .recruitViewWrap{
+	border: 1px solid #d5a97d;
+	margin: 20px 0 0 0;
+	padding: 10px;
+}
+.recruitViewWrap .treatment-List{
+	overflow: hidden;
+	margin-top: 15px;
+}
+.recruitViewWrap .treatment-List li{
+	display: inline-block;
+}
+.recruitViewWrap .treatment-List li.noOption img{
+	opacity: 0.6;
+}
+.recruitWrap .recruitPrWrap{
+	border: 1px solid #d5a97d;
+}
+.recruitWrap .recruitPrWrap h3{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	background: #d5a97d;
+	color: #ffffff;
+}
+.recruitPrWrap .PrInner{
+	font-size: 14px;
+	padding: 40px;
+	text-align: center;
+}
+.recruitWrap .recruitInfoWrap,
+.recruitWrap .applyInfoWrap{
+	padding: 20px 0;
+}
+.recruitWrap .recruitInfoWrap h3,
+.recruitWrap .applyInfoWrap h3{
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	color: #d5a97d;
+}
+.recruitWrap .btnWrap{
+	padding: 40px 0;
+	text-align: center;
+}
+.recruitWrap .btnWrap .lookBtn{
+	display: inline-block;
+	position: relative;
+	background: #d5a97d;
+	color: #fff;
+	padding: 10px 40px 10px 30px;
+	border-bottom: 5px solid #c65c33;
+	border-radius: 4px;
+}
+.recruitWrap .btnWrap .lookBtn .text{
+	font-size: 16px;
+}
+.recruitWrap .btnWrap .lookBtn .ja{
+	padding-left: 10px;
+	font-size: 12px;
+}
+.recruitWrap .btnWrap .lookBtn:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	width: 10px;
+	height: 10px;
+	margin: -5px 0 0 0;
+	border-top: solid 2px #fff;
+	border-right: solid 2px #fff;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+/*
+*メディア設定
+------------------------------------------------------------------*/
+@media only screen and (max-width: 1024px){
+	.recruitWrap .pageLink .LinkWrap dl{
+		width: 100%;
+		display:table;
+	}
+	.recruitWrap .pageLink .LinkWrap dl dt,
+	.recruitWrap .pageLink .LinkWrap dl dd{
+		display:table-cell;
+		vertical-align: middle;
+	}
+	.recruitWrap .pageLink .LinkWrap dl dt{
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 767px){
+	.recruitWrap .pageView{
+		padding: 30px 0;
+	}
+	.recruitWrap .pageView .catch-comment{
+		margin-top: 0;
+	}
+	.recruitWrap .pageLink .LinkWrap dl dt{
+		width: 55%;
+	}
+	.recruitWrap .tbl-r01{
+		font-size: 12px;
+	}
+	.recruitWrap .tbl-r01 th{
+		display: block;
+		width: 100%;
+		border: none;
+		padding: 5px;
+	}
+	.recruitWrap .tbl-r01 td{
+		display: block;
+		width: 100%;
+		padding: 10px;
+	}
+	.recruitPrWrap .PrInner{
+		font-size: 12px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.recruitWrap .textWrap p {
+		font-size: 14px;
+	}
+	.recruitWrap .recruitPrWrap h3{
+		font-size: 22px;
+	}
+	.recruitWrap .recruitInfoWrap h3,
+	.recruitWrap .applyInfoWrap h3{
+		font-size: 22px;
+		margin: 20px 0 20px;
+	}
+}
+@media screen and (min-width: 1025px){
+	.recruitWrap .pageLink .LinkWrap ul{
+		
+	}
+	.recruitWrap .pageLink .LinkWrap ul li{
+		width: 240px;
+		padding: 10px;
+		display: inline-block;
+		text-align: center;
+	}
+	.recruitWrap .pageLink .LinkWrap dl{
+		padding: 50px 20px;
+	}
+	.recruitWrap .pageLink .LinkWrap dl dt span.ja{
+		line-height: 15px;
+		font-size: 12px;
+	}
+	.recruitWrap .pageLink .LinkWrap dl dt{
+		line-height: 50px;
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+	.recruitWrap .pageLink .LinkWrap dl dd a{
+		font-size: 16px;
+		line-height: 40px;
+	}
+	.recruitWrap .recruitViewWrap{
+		margin: 40px 0;
+		padding: 25px;
+	}
+	.recruitViewWrap .treatment-List{
+		text-align: center;
+	}
+	.recruitWrap .recruitPrWrap,
+	.recruitWrap .recruitInfoWrap,
+	.recruitWrap .applyInfoWrap{
+		padding: 40px 0;
+	}
+	.recruitWrap .recruitPrWrap h3{
+		font-size: 25px;
+	}
+	.recruitWrap .recruitInfoWrap h3,
+	.recruitWrap .applyInfoWrap h3{
+		font-size: 25px;
+		margin: 55px 0 20px;
+	}
+}
+/*
+* Apply
+------------------------------------------------*/
+.ApplyWrap .textWrap{
+	padding: 40px 0;
+}
+.ApplyWrap .textWrap p {
+	color: #5d5d5d;
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.ApplyWrap .tbl-r01{
+	width: 100%;
+	font-size: 14px;
+	font-family: '小塚ゴシック Pro L', 'Kozuka Gothic Pro Light', sans-serif;
+}
+.ApplyWrap .tbl-r01 th{
+	background-color: #d5a97d;
+	border: 1px solid #ffac8b;
+	vertical-align: middle;
+	color: #fff;
+	padding: 10px;
+	text-align: right;
+}
+.ApplyWrap .tbl-r01 th .notation{
+	background: #ff0000;
+	font-size: 12px;
+	margin-left: 10px;
+	padding: 2px 5px;
+}
+.ApplyWrap .tbl-r01 td{
+	border: 1px solid #ffac8b;
+	padding: 10px;
+	color: #5d5d5d;
+}
+.ApplyWrap .tbl-r01 td .input-text{
+	width: 100%;
+	height: 30px;
+}
+.ApplyWrap .tbl-r01 td .s-text,
+.ApplyWrap .tbl-r01 td .date-text{
+	height: 30px;
+}
+.ApplyWrap .tbl-r01 td textarea{
+	width: 100%;
+	height: 150px;
+}
+.ApplyWrap .tbl-r01 td span.ja{
+	padding: 0 10px;
+}
+.ApplyWrap .SubmitBtn{
+	text-align: center;
+	margin: 30px 0;
+}
+.ApplyWrap .SubmitBtn input{
+	background-color: #d5a97d;
+	border: 1px solid #ffac8b;
+	color: #fff;
+	line-height: 40px;
+	cursor: pointer;
+}
+/*
+*メディア設定
+------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+	.ApplyWrap .textWrap{
+		padding: 20px 0;
+	}
+	.ApplyWrap .tbl-r01{
+		font-size: 12px;
+	}
+	.ApplyWrap .tbl-r01 th{
+		display: block;
+		width: 100%;
+		border: none;
+		padding: 5px;
+		text-align: center;
+	}
+	.ApplyWrap .tbl-r01 th .notation{
+		font-size: 10px;
+	}
+	.ApplyWrap .tbl-r01 td{
+		display: block;
+		width: 100%;
+		padding: 10px;
+	}
+	.ApplyWrap .tbl-r01 td ul li:first-child{
+		margin-bottom: 5px;
+	}
+	.ApplyWrap .SubmitBtn input{
+		width: 60%;
+	}
+}
+@media only screen and (min-width: 768px){
+	.ApplyWrap .textWrap p {
+		font-size: 14px;
+	}
+	.ApplyWrap .tbl-r01 td ul li{
+		display: inline-block;
+	}
+	.ApplyWrap .tbl-r01 td .input-text{
+		width: 60%;
+	}
+	.ApplyWrap .SubmitBtn input{
+		padding: 0 30px;
+	}
+}
+@media screen and (min-width: 1025px){
+	
+}

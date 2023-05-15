@@ -1,0 +1,7 @@
+.htaccess
+*.psd
+templates_c/*
+admin/cast/image/*
+admin/news/image/*
+_psd/*
+*.psb

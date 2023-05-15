@@ -1,0 +1,474 @@
+@charset "UTF-8";
+/*
+* 管理画面ログイン
+------------------------------------------------*/
+
+h1.h1_admin_title{
+	text-align: center;
+	padding: 30px 0;
+}
+h1.h1_admin_title img{
+	max-width: 330px;
+}
+.login{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin: 0 0 0 -165px;
+}
+.login-box{
+	border: 1px solid #ff7b48;
+	padding: 20px;
+	text-align: center;
+}
+.login-box p{
+	color: #FFF;
+	font-size: 16px;
+}
+.login-box p.log_text{
+	margin-bottom: 10px;
+}
+.login-box p span{
+	display: inline-block;
+	width: 100px;
+}
+.log_btn input{
+	width: 60%;
+}
+/*
+* 管理画面共通
+------------------------------------------------*/
+.page-header{
+	position: relative;
+}
+.page-header .add-link-box{
+	position: absolute;
+	right: 0;
+}
+.page-header .add-link-box li{
+	line-height: 30px;
+	background: #ff7b48;
+}
+.page-header .add-link-box a{
+	color: #fff;
+	padding: 0 10px;
+	font-size: 14px;
+}
+#Content{
+	padding-top: 52px;
+}
+.adminWrap .wrapBlock{
+	padding-bottom: 30px;
+}
+.adminWrap .bgDamask{
+	color: #FFF;
+}
+.adminWrap .box-inner h3{
+	font-size: 18px;
+	padding: 10px 0;
+}
+.adminWrap input.input-text{
+	width: 100%;
+	height: 30px;
+}
+.adminWrap input{
+	height: 30px;
+}
+.adminWrap .recruit-text{
+	width: 100%;
+	height: 150px;
+}
+.checkbox{
+	margin: 0 10px 10px 0;
+}
+.checkbox input[type=checkbox],
+.radio input[type=radio]{
+	width: 24px;
+	height: 24px;
+	-moz-transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	transform: scale(1.4);
+}
+/* 一覧 */
+.adminList .tbl-r01{
+	width: 100%;
+	font-size: 14px;
+}
+.adminList .tbl-r01 td.thumbnail{
+	line-height: 0;
+}
+.adminList .tbl-r01 td.input{
+	text-align: center;
+}
+.adminList li.list_item{
+	padding: 5px;
+	float: left;
+}
+.adminList li.list_item dd{
+	text-align: center;
+}
+.adminWrap ul.input-btn{
+	padding: 10px 0;
+}
+.adminWrap ul.input-btn li{
+	text-align: center;
+}
+.adminWrap ul.input-btn li input{
+	padding: 0 20px;
+}
+/* 登録・変更 */
+.adminWrap .admin-main dl{
+	margin-bottom: 10px;
+}
+.adminWrap .admin-main dl:last-child{
+	margin-bottom: 0;
+}
+.adminWrap .admin-main dl dt{
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.adminWrap .admin-main dl dd li{
+	display: inline-block;
+	font-size: 16px;
+}
+.adminWrap .add-box .img_list li{
+	padding: 5px;
+	float: left;
+}
+/* サイド */
+.admin-sidebar .side-box{
+	background: #FFF;
+	color: #000;
+	border-radius: 6px;
+	margin-top: 20px;
+}
+.admin-sidebar .side-box dl dt{
+	border-bottom: 1px solid #CCC;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.admin-sidebar .side-box dl dd{
+	padding: 10px;
+	font-size: 14px;
+}
+.admin-sidebar .side-box dl dd ul{
+	text-align: center;
+}
+.admin-sidebar .side-box dl dd ul li{
+	width: 48%;
+	display: inline-block;
+}
+.admin-sidebar .side-box dl dd ul li input{
+	width: 100%;
+}
+/* カテゴリー登録 */
+.adminWrap .add-category h3,
+.adminWrap .list-category h3{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.adminWrap .add-category dl{
+	margin-bottom: 10px;
+}
+.adminWrap .add-category dl dt{
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+/* 求人応募内容確認 */
+.adminWrap .admin-contact p{
+	font-size: 16px;
+	margin-bottom: 10px;
+	text-align: right;
+}
+.adminWrap .admin-contact dl{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.adminWrap .admin-contact dl dt{
+	margin-bottom: 5px;
+}
+.adminWrap .input-btn{
+	width: 100%;
+	text-align:center;
+}
+.adminWrap .input-btn input{
+	font-size: 14px;
+	margin: 10px 0;
+}
+.adminWrap .list-pager{
+	overflow: hidden;
+	position: relative;
+	margin: 20px 0 10px 0;
+}
+.adminWrap .list-pager ul{
+	float: left;
+	position: relative;
+	left: 50%;
+}
+.adminWrap .list-pager ul li{
+	float: left;
+	margin: 5px 5px 0 5px;
+	font-size: 16px;
+	position: relative;
+	left: -50%;
+}
+.adminWrap .list-pager ul li a{
+	display: block;
+	background: #ff7b48;
+	border: 1px solid #ffac8b;
+	color: #FFFFFF;
+	font-size: 16px;
+	padding: 3px 10px;
+}
+.adminWrap .list-pager ul li a:hover{
+	color: #FFFFFF;
+	background: #6c461d;
+	border: 1px solid #ffac8b;
+}
+.adminWrap .list-pager ul li#active{
+	background: #ff7b48;
+	border: 1px solid #ffac8b;
+	color: #FFFFFF;
+	padding: 3px 10px;
+}
+.adminWrap .list-pager ul li span{
+	display: none;
+}
+footer.FooterWrap h5{
+	margin-bottom: 10px;
+}
+/*
+*メディア設定
+------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+	.global-header .global-nav li.menu__single{
+		padding-bottom: 20px;
+	}
+	.global-header .global-nav li .menu__second-level li{
+		border-bottom: none;
+		font-size: 12px;
+	}
+	.global-header .global-nav li .menu__second-level li a{
+		padding: 0 0 5px 40px;
+	}
+	header.page-header h2.header_ttl{
+		margin-bottom: 10px;
+	}
+	.page-header .add-link-box{
+		bottom: 0;
+	}
+	/* 一覧 */
+	.adminList .tbl-r01 .thead {
+		display: none;
+	}
+	.adminList .tbl-r01 tr{
+		display: block;
+		padding-bottom: 20px;
+	}
+	.adminList .tbl-r01 td {
+		display: block;
+		width: 100%;
+		padding: 0 0 5px 0;
+	}
+	.adminList .tbl-r01 td:before {
+		display: block;
+		line-height: 1.3;
+		background: #333;
+		width: 100%;
+		text-align: center;
+		padding: 5px;
+		margin-bottom: 5px;
+		content: attr(data-label);
+		font-weight: bold;
+	}
+	.adminList .tbl-r01 td:last-child{
+		text-align: center;
+	}
+	.adminList .tbl-r01 td input{
+		width: 49%;
+	}
+	.adminList li.list_item{
+		width: 50%;
+	}
+	.adminWrap .add-box .img_list li{
+		width: 50%;
+		padding: 20px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.page-header .add-link-box{
+		top: 48px;
+	}
+	/* 一覧 */
+	.adminList .tbl-r01{
+		border: 1px solid #CCC;
+	}
+	.adminList .tbl-r01 th,
+	.adminList .tbl-r01 td{
+		border: solid 1px #ccc;
+	}
+	.adminList .tbl-r01 th{
+		padding: 5px 0;
+	}
+	.adminList .tbl-r01 th.title{
+		width: 26%;
+	}
+	.adminList .tbl-r01 th.thumbnail{
+		width: 15%;
+	}
+	.adminList .tbl-r01 th.editor{
+		width: 30%;
+	}
+	.adminList .tbl-r01 th.date{
+		width: 12%;
+	}
+	.adminList .tbl-r01 th.input{
+		width: 17%;
+	}
+	.adminList .tbl-r01 td{
+		padding: 5px;
+	}
+	.adminList .tbl-r01 td.date{
+		text-align: center;
+	}
+	.adminList li.list_item{
+		width: 20%;
+	}
+	.adminWrap .add-box .img_list li{
+		width: 33.3333%;
+	}
+	/* カテゴリー登録 */
+	.adminWrap .add-category{
+		width: 40%;
+		float: left;
+	}
+	.adminWrap .list-category{
+		width: 55%;
+		float: left;
+		margin-left: 5%;
+	}
+	.adminWrap .list-category .tbl-r01 .title{
+		width: 40%;
+	}
+	.adminWrap .list-category .tbl-r01 .color{
+		width: 15%;
+	}
+	.adminWrap .list-category .tbl-r01 .count{
+		width: 15%;
+	}
+	.adminWrap .list-category .tbl-r01 .input{
+		width: 30%;
+	}
+	/* 求人応募内容確認 */
+	.adminWrap .admin-contact{
+		width: 600px;
+		margin: auto;
+	}
+	.adminWrap .admin-contact dl{
+		display:table;
+	}
+	.adminWrap .admin-contact dl dt,
+	.adminWrap .admin-contact dl dd{
+		display: table-cell;
+		vertical-align:middle;
+	}
+	.adminWrap .admin-contact dl dt{
+		width: 200px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	.global-header .global-nav li.menu__single{
+		padding-bottom: 20px;
+	}
+	.global-header .global-nav li .menu__second-level li{
+		border-bottom: none;
+		font-size: 12px;
+	}
+	.global-header .global-nav li .menu__second-level li a{
+		padding: 0 0 5px 40px;
+	}
+	/* サイド */
+	.admin-sidebar .side-box{
+		width: 49%;
+		float: left;
+	}
+	.admin-sidebar .side-box:nth-child(2n+1){
+		margin-right: 2%;
+	}
+}
+@media screen and (min-width: 1025px){
+	.global-header .global-nav .admin-nav li a{
+		padding: 10px 35px;
+	}
+	.page-header .add-link-box{
+		top: 68px;
+	}
+	.global-header .global-nav li.menu__single {
+		position: relative;
+	}
+	ul.menu__second-level {
+		visibility: hidden;
+		opacity: 0;
+	}
+	.global-header .global-nav > li:hover {
+		-webkit-transition: all .5s;
+		transition: all .5s;
+	}
+	li.menu__single ul.menu__second-level {
+		position: absolute;
+		top: 42.5px;
+		width: 100%;
+		background: #000;
+		-webkit-transition: all .2s ease;
+		transition: all .2s ease;
+	}
+	li.menu__single:hover ul.menu__second-level {
+	    top: 52.5px;
+	    visibility: visible;
+	    opacity: 1;
+	}
+	.global-header .global-nav li.menu__single ul.menu__second-level li{
+		border-left: none;
+		display: block;
+		font-size: 12px;
+		border-left: none;
+	}
+	.global-header .global-nav li.menu__single ul.menu__second-level li a{
+		padding: 10px 0;
+	}
+	#Content{
+		padding-top: 100px;
+	}
+	.adminWrap .admin-main{
+		width: 670px;
+		float: left;
+	}
+	/* 一覧 */
+	.adminList .tbl-r01 th.title,
+	.adminList .tbl-r01 th.name{
+		width: 23%;
+	}
+	.adminList .tbl-r01 th.thumbnail{
+		width: 15%;
+	}
+	.adminList .tbl-r01 th.editor{
+		width: 30%;
+	}
+	.adminList .tbl-r01 th.category,
+	.adminList .tbl-r01 th.birthday,
+	.adminList .tbl-r01 th.date{
+		width: 10%;
+	}
+	.adminList .tbl-r01 th.mail{
+		width: 35%;
+	}
+	.adminList .tbl-r01 th.input{
+		width: 12%;
+	}
+	/* サイド */
+	.adminWrap .admin-sidebar{
+		width: 280px;
+		float: right;
+	}
+}
