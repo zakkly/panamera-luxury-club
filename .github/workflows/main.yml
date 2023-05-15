@@ -10,7 +10,8 @@ jobs:
     name: FTP-Deploy-Action
 
     steps:
-      - uses: actions/checkout@v2
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
 
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.1.0 #（※21年12月31日時点最新版は4.2です）
